@@ -1,0 +1,87 @@
+/* Styles specific to the Project Page */
+
+/* General Project Section Styling */
+.project-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  /* Individual Project Backgrounds and Hover Effects */
+  .project-section:nth-child(1) {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  }
+  .project-section:nth-child(1):hover {
+    transform: rotate(1deg) scale(1.05);
+    background: linear-gradient(135deg, #ffc3a0, #ffafbd);
+  }
+  
+  .project-section:nth-child(2) {
+    background: linear-gradient(135deg, #c9ffbf, #ffafbd);
+  }
+  .project-section:nth-child(2):hover {
+    transform: rotate(-1deg) scale(1.05);
+    background: linear-gradient(135deg, #ffafbd, #c9ffbf);
+  }
+  
+  .project-section:nth-child(3) {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  }
+  .project-section:nth-child(3):hover {
+    transform: rotate(1deg) scale(1.05);
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+  }
+  
+  /* Video Container */
+  .video-container iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Description Box */
+  .description {
+    flex: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .description p {
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hover Shadow for Project Sections */
+  .project-section:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  

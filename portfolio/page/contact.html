@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me - Abul Basar Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  <canvas id="backgroundCanvas"></canvas>
+  
+  <header>
+    <div class="logo">
+      <div class="profile-container">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture" id="profilePicture">
+      </div>
+      <h1>Abul Basar Portfolio</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="about.html">Education</a></li>
+        <li><a href="contact.html" class="active">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="contact-container">
+      <h2 class="contact-header">Contact Me</h2>
+      <p class="contact-subtext">Feel free to reach out; I'll get back to you as soon as possible.</p>
+      
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" id="nameInput" required>
+        <input type="email" name="email" placeholder="Your Email" id="emailInput" required>
+        <textarea name="message" placeholder="Your Message" id="messageInput" required></textarea>
+        <button type="button" id="sendButton">Send</button>
+      </form>
+      
+      <!-- Feedback area for displaying sent messages -->
+      <div class="feedback-section">
+        <h3>Feedback</h3>
+        <div id="feedbackList"></div>
+      </div>
+      
+      <!-- Compose Mail Button -->
+      <div class="compose-button-container">
+        <button id="composeMailButton">Compose Mail</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Abul Basar Portfolio. All rights reserved.</p>
+  </footer>
+  
+  <!-- Page-specific JavaScript -->
+  <script src="script/contact.js"></script>
+</body>
+</html>

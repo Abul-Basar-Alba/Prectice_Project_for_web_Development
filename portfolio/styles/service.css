@@ -1,0 +1,49 @@
+/* Styles specific to the Service Page */
+
+/* Service Section Styling */
+.service-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #00fff7;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Service Header */
+  .service-header {
+    position: relative;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .service-header:hover {
+    color: #007BFF;
+  }
+  
+  /* Service Content (Paragraphs & Lists) */
+  .service-section .content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .service-section .content ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+  }
+  .service-section .content ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Add an animation for when the service content is revealed */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

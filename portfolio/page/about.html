@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Abul Basar Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/contact.css"> <!-- Reuse common layout styles if needed -->
+  <style>
+    /* Additional About Page specific styles */
+    .about-container {
+      width: 80%;
+      margin: 40px auto;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    .education-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .education-section:hover {
+      transform: translateY(-5px);
+    }
+    .edu-image {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    .edu-details h3 a {
+      text-decoration: none;
+      color: #007BFF;
+      transition: color 0.3s;
+    }
+    .edu-details h3 a:hover {
+      color: #0056b3;
+    }
+    .edu-details p {
+      color: #555;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="backgroundCanvas"></canvas>
+  <header>
+    <div class="logo">
+      <div class="profile-container">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture" id="profilePicture">
+      </div>
+      <h1>Abul Basar Portfolio</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="about.html" class="active">Education</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="about-container">
+      <!-- High School Section -->
+      <div class="education-section">
+        <img src="images/school.jpeg" alt="High School" class="edu-image">
+        <div class="edu-details">
+          <h3>
+            <a href="https://www.sohopathi.com/gayeshpur-padmalocahn-high-school/" target="_blank">
+              Gayeshpur P.L. High School
+            </a>
+          </h3>
+          <p><strong>SSC Result:</strong> GPA 4.94 / 5</p>
+          <p><strong>Graduated:</strong> 2019</p>
+        </div>
+      </div>
+      
+      <!-- College Section -->
+      <div class="education-section">
+        <img src="images/college.jpeg" alt="College" class="edu-image">
+        <div class="edu-details">
+          <h3>
+            <a href="https://eed.narsingdi.gov.bd/" target="_blank">
+              Narsingdi Govt. College
+            </a>
+          </h3>
+          <p><strong>HSC Result:</strong> GPA 5 / 5</p>
+          <p><strong>Graduated:</strong> 2021</p>
+        </div>
+      </div>
+      
+      <!-- University Section -->
+      <div class="education-section">
+        <img src="images/university.jpg" alt="University" class="edu-image">
+        <div class="edu-details">
+          <h3>
+            <a href="https://www.pstu.ac.bd/" target="_blank">
+              Patuakhali Science and Technology University
+            </a>
+          </h3>
+          <p><strong>Status:</strong> In Progress</p>
+          <p><strong>Current CGPA:</strong> 3.336 / 4</p>
+          <p><strong>Enrolled:</strong> 2023</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Freelance Profile Section -->
+    <section class="profile-section">
+      <h2 style="color:#333;">Hire Me on Freelance Platforms</h2>
+      <p style="color:#555;">Check out my PeoplePerHour and Upwork profiles to hire me for your projects:</p>
+      <div class="profile-links">
+        <a href="https://www.peopleperhour.com/freelancer/technology-programming/md_noushad-bhuiyan-game-and-app-developer-zzvnzvnj" target="_blank" class="profile-link fiverr">PeoplePerHour Profile</a>
+        <a href="https://www.upwork.com/freelancers/~0193bcc1ac56d08c40" target="_blank" class="profile-link upwork">Upwork Profile</a>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Abul Basar Portfolio. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
