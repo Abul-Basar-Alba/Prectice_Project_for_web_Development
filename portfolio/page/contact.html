@@ -6,6 +6,12 @@
   <title>Contact Me - Abul Basar Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles/contact.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("xGVANhZPFmbkXBJaj"); // Replace with your actual EmailJS public key
+    })();
+  </script>
 </head>
 <body>
   <canvas id="backgroundCanvas"></canvas>
@@ -58,6 +64,6 @@
   </footer>
   
   <!-- Page-specific JavaScript -->
-  <script src="script/contact.js"></script>
+  <script src="scripts/contact.js"></script>
 </body>
 </html>

@@ -3,33 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abul Basar Portfolio</title>
-  <!-- Link to the root style.css -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts for improved typography -->
+  <title>Abul Basar - Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Animated Background (Canvas) -->
+  <!-- Animated Background -->
   <canvas id="backgroundCanvas"></canvas>
   
   <!-- Header -->
   <header>
     <div class="logo">
       <div class="profile-container">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture" id="profilePicture">
+        <img src="images/profile.jpg" alt="Abul Basar" class="profile-picture" id="profilePicture">
       </div>
-      <h1>Abul Basar Portfolio</h1>
+      <h1>Abul Basar</h1>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="page/service.html">Services</a></li>
-        <li><a href="page/project.html">Projects</a></li>
-        <li><a href="page/about.html">Education</a></li>
-        <li><a href="page/contact.html">Contact Me</a></li>
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="page/service.html"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="page/project.html"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="page/about.html"><i class="fas fa-user-graduate"></i> Education</a></li>
+        <li><a href="page/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -38,17 +42,64 @@
   <main>
     <section class="hero">
       <h2>Welcome to My Portfolio</h2>
-      <p>Discover my projects, services, and educational journey.</p>
-      <a href="page/project.html" class="cta-button">View Projects</a>
+      <p>Hi, I'm Abul Basar. A passionate Full Stack Developer specializing in web and mobile applications.</p>
+      <div class="hero-buttons">
+        <a href="page/project.html" class="cta-button">View My Work <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>App Development</h3>
+          <p>Flutter, React Native</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>Backend Development</h3>
+          <p>Node.js, Express, MongoDB</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+      <h2>Quick Links</h2>
+      <div class="links-container">
+        <a href="https://github.com/yourusername" target="_blank" class="social-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="page/contact.html" class="social-link">
+          <i class="fas fa-envelope"></i> Contact Me
+        </a>
+      </div>
     </section>
   </main>
   
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Abul Basar Portfolio. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:bmdnoushad@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2024 Abul Basar. All rights reserved.</p>
+    </div>
   </footer>
-  
-  <!-- Root JavaScript -->
+
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
